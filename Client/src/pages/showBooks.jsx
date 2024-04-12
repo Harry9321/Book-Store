@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://15.206.180.29:5555/books/${id}`)
+      .get(`http://44.206.79.84:5555/books/${id}`)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
