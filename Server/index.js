@@ -29,7 +29,7 @@ app.get("/", (request, response) => {
   return response.status(234).send("Welcome");
 });
 
-app.use("/books", bookRouter);
+app.use("/api", bookRouter);
 
 mongoose
   .connect(mongoURI)
